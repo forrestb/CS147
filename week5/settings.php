@@ -29,31 +29,50 @@
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<p></p>
-		<ul data-role="listview" data-inset="true" data-filter="true">
-			<li><a href="#">Barack Obama</a></li>
-			<li><a href="#">Mitt Romney</a></li>
-			<li><a href="#">Peta Lindsay</a></li>
-			<li><a href="#">Rocky Anderson</a></li>
-			<li><a href="#">Virgil Goode</a></li>
-			<li><a href="#">Jill Stein</a></li>
-			<li><a href="#">Gary Johnson</a></li>
-		</ul>
-		
-		<ul data-role="listview" data-inset="true">
-			<li class="taphold">Tap and hold me</li>
-			<li class="tap">Tap me</li>			
-			<li class="swiperight">Swipe me right</li>
-			<li class="swipeleft">Swipe me left</li>
-		</ul>
-		
-		<a href="#" data-role="button" data-icon="star">Star button</a>
 
-		<div data-role="collapsible">
-		   <h3>I'm a header</h3>
-		   <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
+	<form action="submit.php" method="post">
+		<div data-role="fieldcontain">
+	     <label for="foo">Your Name:</label>
+	     <input type="text" name="name" id="foo" value=""  />
 		</div>
-		
+	
+		<div data-role="fieldcontain">
+		<fieldset data-role="controlgroup">
+	    	<legend>Gender:</legend>
+	         	<input type="radio" name="gender" id="radio-female" value="f" />
+	         	<label for="radio-female">Female</label>
+	
+	         	<input type="radio" name="gender" id="radio-male" value="m" />
+	         	<label for="radio-male">Male</label>
+	    </fieldset>
+	    </div>
+	
+		<div data-role="fieldcontain">
+		<label for="flip-s">Server status:</label>
+		<select name="flip-s" id="flip-s" data-role="slider">
+			<option value="off">Off</option>
+			<option value="on">On</option>
+		</select>
+	    </div>
+	
+	    <div data-role="fieldcontain">
+		<label for="slider">Max bandwidth:</label>
+		<input type="range" name="slider" id="slider" value="0" min="0" max="100" />
+	    </div>
+	
+		<div data-role="fieldcontain">
+			<label for="select-choice-x" class="select">Shipping:</label>
+			<select name="select-shipper" id="select-choice-x" >
+				<option></option>
+				<option value="standard">Standard</option>
+				<option value="rush">Rush</option>
+				<option value="express">Express</option>
+				<option value="overnight">Overnight</option>
+			</select>
+		</div>
+		<div class="ui-block-b"><button type="submit" data-theme="a">Submit</button></div>
+
+	</form>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-id="samebar" class="nav-glyphish-example" data-position="fixed" data-tap-toggle="false">
@@ -61,8 +80,8 @@
 		<ul>
 			<li><a href="index.php" id="home" data-icon="custom">Home</a></li>
 			<li><a href="login.php" id="key" data-icon="custom">Login</a></li>
-			<li><a href="filter.php" id="beer" data-icon="custom" class="ui-btn-active">Filter</a></li>
-			<li><a href="settings.php" id="skull" data-icon="custom">Settings</a></li>
+			<li><a href="filter.php" id="beer" data-icon="custom" >Filter</a></li>
+			<li><a href="settings.php" id="skull" data-icon="custom" class="ui-btn-active">Settings</a></li>
 		</ul>
 		</div>
 	</div>

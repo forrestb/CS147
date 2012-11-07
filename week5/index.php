@@ -17,6 +17,8 @@
 	<script src="jquery-1.8.2.min.js"></script>
 	<script src="jquery.mobile-1.2.0.js"></script>
 
+  <link rel="apple-touch-startup-image" href="startup.jpg">
+
 </head> 
 
 	
