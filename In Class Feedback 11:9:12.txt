@@ -1,0 +1,12 @@
+-Screen that tells if account already exists
+
+-Logout Button
+
+-Make Outstanding Requests Work
+
+
+-On account settings page, beneath "Set Current Location As Garden Location", show a map of my current map
+
+
+
+mobile.changePage() to move pages, to show updated crops (after deleting one)
